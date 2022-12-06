@@ -1,0 +1,22 @@
+body {
+    font-family: 'Poppins', Verdana, sans-serif;
+}
+
+/*Navigation bar*/
+nav {
+    background-color: white;
+
+}
+nav ul {
+    padding: 0px;
+    font-size: 16px;
+}
+nav li {
+    padding-left: 20px;
+    display: inline-block;
+}
+.nav-active {
+    font-weight: 600;
+}
+
+/*Game item*/
