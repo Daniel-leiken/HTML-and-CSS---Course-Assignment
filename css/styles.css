@@ -17,6 +17,13 @@ nav li {
 }
 .nav-active {
     font-weight: 600;
+    color: #1B203C;
 }
+
+nav a {
+    color: #434665;
+    text-decoration: none;
+}
+
 
 /*Game item*/
