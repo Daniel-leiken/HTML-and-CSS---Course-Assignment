@@ -1,6 +1,20 @@
+header {
+    background-color: white;
+    width: 100%;
+    padding: 35px;
+    flex-direction: row;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+
+}
+
 body {
     font-family: 'Poppins', Verdana, sans-serif;
+    background-color: #1B203C;
 }
+
 
 /*Navigation bar*/
 nav {
@@ -25,5 +39,16 @@ nav a {
     text-decoration: none;
 }
 
+/*Typography*/
+h2 {
+    color: #CACBF1;
+    font-weight: 600;
+    font-size: 31.25px;
+}
+
+p {
+    color: #CACBF1;
+    font-size: 16px;
+}
 
 /*Game item*/
