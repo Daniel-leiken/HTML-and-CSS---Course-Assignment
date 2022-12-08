@@ -129,11 +129,25 @@ p {
 /* Game item */
 .game-item {
     width: 150px;
+    display: flex;
+    flex-direction: column;
 }
 .game-item img {
     width: 150px;
+    border-radius: 25px,25px,25px,25px;
+}
+.game-item p {
+    color: #1B203C;
 }
 
-.lowerhalf {
-    background-color: white
+.game-description {
+    background-color: white;
+    justify-content: center;
+    align-items: top;
 }
+
+.platforms{
+    display: flex;
+    flex-direction: row;
+}
+
