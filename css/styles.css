@@ -24,7 +24,8 @@ main {
     min-height: 80vh;
 }
 .box {
-width: 50%;
+    float: left;
+    width: 50%;
 }
 
 footer {
@@ -50,14 +51,27 @@ footer {
     padding-right: 40px;
 }
 
-.svg-color { /* Shopping-cart Icon */
-    color: #1B203C;
+/* Icons & images */
+
+.material-symbols-outlined {
+font-size: 25px;
+color: #1B203C;
 }
 
+.header-right .material-symbols-outlined {
+    font-size: 25px;
+    background-color: #EBEBFD;
+    padding: 10px;
+    border-radius: 30px;
+}
 
 .logo { /* GameHub Logo */
     width: 175px;
 }
+
+
+
+
 
 /* Navigation bar */
 nav {
@@ -96,7 +110,7 @@ p {
 
 /* Buttons */
 .button {
-    width: 100px;
+    width: 110px;
     background-color: #1B203C;
     border: none;
     color: white;
@@ -106,6 +120,7 @@ p {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    transition: 0.5s;
 }
 .button:hover {
     background-color: #CACBF1;
@@ -113,12 +128,7 @@ p {
     color: white;
     content: "Search";
 }
-.button:hover {
-    background-color: #CACBF1;
-    border: none;
-    color: white;
-    content: "Search";
-}
+
 .button:after{
     content:'Discover';
 }
@@ -151,3 +161,9 @@ p {
     flex-direction: row;
 }
 
+/* Responsive Layout */
+@media screen and (max-width:600px) {
+    .box {
+      width: 100%;
+    }
+}
