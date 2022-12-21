@@ -18,10 +18,16 @@ main {
     background-color: #1B203C;
     display: flex;
     width: 100%;
+    justify-content: center;
     align-content: top;
     flex-wrap: wrap;
     position: absolute;
     min-height: 80vh;
+    padding: 50px,50px,50px,50px;
+}
+
+.container {
+    width: 1200px;
 }
 .box {
     float: left;
@@ -52,18 +58,6 @@ footer {
 }
 
 /* Icons & images */
-
-.material-symbols-outlined {
-font-size: 25px;
-color: #1B203C;
-}
-
-.header-right .material-symbols-outlined {
-    font-size: 25px;
-    background-color: #EBEBFD;
-    padding: 10px;
-    border-radius: 30px;
-}
 
 .logo { /* GameHub Logo */
     width: 175px;
@@ -137,6 +131,10 @@ p {
 }
 
 /* Game item */
+.game-container {
+    display: flex;
+    flex-direction: column;
+}
 .game-item {
     width: 150px;
     display: flex;
