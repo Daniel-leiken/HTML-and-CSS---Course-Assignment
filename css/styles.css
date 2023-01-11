@@ -22,6 +22,12 @@ main {
     flex-wrap: wrap;
     position: absolute;
     min-height: 80vh;
+    padding:20px;
+}
+.layout {
+    display: flex;
+    flex-direction: column;
+    width: 1140px;
 }
 .box {
     float: left;
@@ -97,6 +103,10 @@ nav a {
 }
 
 /* Typography */
+h1 {
+    color: #CACBF1;
+    font-size: 39.06px;
+}
 h2 {
     color: #CACBF1;
     font-weight: 600;
