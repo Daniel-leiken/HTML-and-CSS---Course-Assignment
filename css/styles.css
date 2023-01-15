@@ -19,6 +19,7 @@ main {
     background-color: #1B203C;
     display: flex;
     width: 100%;
+    justify-content: center;
     align-content: top;
     flex-wrap: wrap;
     position: absolute;
