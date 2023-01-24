@@ -109,7 +109,8 @@ nav a {
 /* Typography */
 h1 {
     color: #CACBF1;
-    font-size: 39.06px;
+    font-size: 35px;
+    font-weight: 600;
 }
 h2 {
     color: #CACBF1;
