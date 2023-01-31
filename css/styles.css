@@ -80,7 +80,31 @@ footer {
 }
 
 
-
+/* Forms */
+form {
+    width: 300px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-family: 'Poppins', Verdana, sans-serif;
+  }
+  
+  input[type="submit"] {
+    background-color: #434665;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 150px
+  }
 
 
 /* Navigation bar */
