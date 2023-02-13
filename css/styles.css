@@ -1,6 +1,10 @@
 body {
     font-family: 'Poppins', Verdana, sans-serif;
     margin: 0px;
+    background-color: #1B203C;
+    min-height: 80vh;
+    width: 100%;
+    justify-content: center;
 }
 
 header {
@@ -24,18 +28,12 @@ header {
 
 }
 main {
-    background-color: #1B203C;
     display: flex;
-    width: 100%;
+    max-width: 1200px;
     justify-content: center;
     align-content: top;
     flex-wrap: wrap;
     position: absolute;
-    min-height: 80vh;
-    padding-top: 20px;
-    padding-left: 100px;
-    padding-bottom: 20px;
-    padding-right: 100px;
 }
 .layout {
     display: flex;
