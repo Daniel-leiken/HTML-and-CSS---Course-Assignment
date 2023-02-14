@@ -2,14 +2,14 @@ body {
     font-family: 'Poppins', Verdana, sans-serif;
     margin: 0px;
     background-color: #1B203C;
-    min-height: 80vh;
+    height: 100vh;
     width: 100%;
     justify-content: center;
+    align-content: center;
 }
 
 header {
     background-color: white;
-    min-width: 1200px;
     height: 150px;
     margin: 0px;
     display: flex;
@@ -25,28 +25,32 @@ header {
     flex-direction: row;
     align-items: center;
     width: 100%;
-    min-width: 1200px;
-
 }
 main {
     display: flex;
-    max-width: 1200px;
+    max-width: 1300px;
     justify-content: center;
     align-content: top;
     flex-wrap: wrap;
-    position: absolute;
+    margin:auto;
+    padding-left: 50px;
+    padding-right: 50px;
+
 }
-.layout {
-    display: flex;
-    flex-direction: column;
-}
+
 .box {
     float: left;
     width: 100%;
 }
 
 footer {
-    background-color: white;
+    width: 100%;
+    background-color: #1B203C;
+    color: #CACBF1;
+    position: fixed;
+    left: 0;bottom: 0;
+    text-align: center;
+    
 }
 /* Header content */
 .header-left {
@@ -57,6 +61,8 @@ footer {
     width: 20%;
     display: flex;
     justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .header-right {
     width: 40%;
@@ -83,7 +89,8 @@ footer {
 }
 
 .logo { /* GameHub Logo */
-    width: 175px;
+    max-width: 175px;
+    min-width: 100px;
 }
 
 
@@ -117,6 +124,7 @@ form {
 /* Navigation bar */
 nav {
     background-color: white;
+    min-width: 100%;
 
 }
 nav ul {
@@ -248,16 +256,206 @@ text-decoration: line-through;
 }
 
 /* Responsive Layout */
+    /* Desktop */
+@media only screen and (min-width: 768px) {
+    .navbar {
+        display: none;
+    }
+}
+
+/* Mobile */
 @media only screen and (max-width: 480px) {
     h2 {
-      font-size: 18px;
+      font-size: 20px;
     }
-  }
+}
   
+  /* Tablet */
   @media only screen and (min-width: 481px) and (max-width: 768px) {
     h2 {
       font-size: 20px;
     }
-  }
 
+    header {
+        height: 100px;
+    }
+    .header-section {
+    }
+    .logo {
+
+    }
+   .nav-desktop {
+    display: none;
+   }
+   .button:hover {
+    content: "";s
+    }
+
+    .button:after{
+    display: none;
+    }
+    .button:hover:after{
+    display: none;
+    }
+    .button {
+        width: 5px;
+    }
+    .account-circle {
+        display: none;
+    }
+    .header-left {
+    padding-left: 10px;
+    width: 40%;
+    }
+    .header-middle {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+    .header-right {
+    width: 40%;
+    column-gap: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    }
+}
+
+  /* Hamburger Menu */
+
+  .container {
+    max-width: 1050px;
+    width: 90%;
+    margin: auto;
+  }
   
+  .navbar {
+    width: 100%;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+  }
+  
+  .navbar .menu-items {
+    display: flex;
+  }
+  
+  .navbar .nav-container li {
+    list-style: none;
+  }
+  
+  .navbar .nav-container a {
+    text-decoration: none;
+    color: #0e2431;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+  }
+  
+  .navbar .nav-container a:hover{
+      font-weight: bolder;
+  }
+  
+  .nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+  }
+  
+  .nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+  }
+  
+  .nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .navbar .menu-items {
+    z-index: 1;
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    height: 100vh;
+    position: absolute;
+    width: 400px;;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    background-color: #FFFF;
+  }
+  
+  .navbar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .logo{
+    display: none;
+  }
