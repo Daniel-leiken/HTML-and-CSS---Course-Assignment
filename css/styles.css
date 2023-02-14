@@ -24,7 +24,8 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 1200px;
+    width: 100%;
+    min-width: 1200px;
 
 }
 main {
