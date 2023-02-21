@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', Verdana, sans-serif;
     margin: 0px;
     background-color: #1B203C;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     justify-content: center;
     align-content: center;
@@ -29,6 +29,7 @@ header {
 main {
     display: flex;
     max-width: 1300px;
+    height: 100vh;
     justify-content: center;
     align-content: top;
     flex-wrap: wrap;
