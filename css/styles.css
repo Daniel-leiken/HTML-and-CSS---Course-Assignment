@@ -215,6 +215,10 @@ p {
     display: flex;
     flex-direction: column;
 }
+.game-item:hover {
+  transition: all .2s ease-in-out; 
+  transform: scale(1.02); 
+}
 .game-item img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
