@@ -256,6 +256,11 @@ text-decoration: line-through;
 
 }
 
+.profile {
+  border-radius: 15px;
+  padding: 5px;
+}
+
 /* Responsive Layout */
     /* Desktop */
 @media only screen and (min-width: 768px) {
