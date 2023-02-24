@@ -165,6 +165,10 @@ p {
     font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .colorchange {
   color: #434665;
 }
