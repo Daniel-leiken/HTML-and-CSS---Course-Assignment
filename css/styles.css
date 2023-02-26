@@ -39,11 +39,20 @@ main {
     padding-right: 50px;
     padding-bottom: 60px;
 }
+.layout {
+  width: 100%;
+}
 
 .box {
     float: left;
     width: 100%;
     padding-bottom: 20px;
+}
+.box-half {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 49%;
 }
 
 footer {
@@ -103,7 +112,6 @@ form {
     margin: auto;
     padding: 10px;
     background-color: transparent;
-    border-radius: 5px;
   }
   
   input, textarea {
@@ -158,6 +166,12 @@ h2 {
     color: #CACBF1;
     font-weight: 600;
     font-size: 31.25px;
+}
+
+h3 {
+  color: #CACBF1;
+  font-weight: 600;
+  font-size: 21px;
 }
 
 p {
@@ -295,6 +309,35 @@ text-decoration: line-through;
   padding: 5px;
 }
 
+.product-image {
+ border-radius: 15px;
+ width: 60%;
+ height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.product-x {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+}
+
+.checkout-summary {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-left: auto;
+  gap: 50px;
+}
+
+.success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
 
 /* Responsive Layout */
     /* Desktop */
@@ -370,13 +413,16 @@ text-decoration: line-through;
     padding-right: 30px;
     padding-bottom: 60px;
 }
+.box-half{
+  width:100%;
+}
 }
 
   
   /* Tablet */
   @media only screen and (min-width: 481px) and (max-width: 768px) {
     h2 {
-      font-size: 20px;
+      font-size: 25px;
     }
 
     header {
@@ -426,6 +472,11 @@ text-decoration: line-through;
     justify-content: flex-end;
     padding-right: 10px;
     }
+    .box-half{
+      width:100%;
+    }
+
+
 }
 
   /* Hamburger Menu */
