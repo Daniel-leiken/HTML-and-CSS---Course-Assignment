@@ -300,9 +300,6 @@ color:#CACBF1;
 font-size: 12px;
 text-decoration: line-through;
 }
-.new-price {
-
-}
 
 .profile {
   border-radius: 15px;
@@ -356,16 +353,12 @@ text-decoration: line-through;
   header {
       height: 100px;
   }
-  .header-section {
-  }
-  .logo {
 
-  }
  .nav-desktop {
   display: none;
  }
  .button:hover {
-  content: "";s
+  content: "";
   }
 
   .button:after{
@@ -428,16 +421,12 @@ text-decoration: line-through;
     header {
         height: 100px;
     }
-    .header-section {
-    }
-    .logo {
 
-    }
    .nav-desktop {
     display: none;
    }
    .button:hover {
-    content: "";s
+    content: "";
     }
 
     .button:after{
@@ -613,3 +602,32 @@ text-decoration: line-through;
   .nav-container input[type="checkbox"]:checked ~ .logo{
     display: none;
   }
+
+
+ /* Loading icon */
+
+ .lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
