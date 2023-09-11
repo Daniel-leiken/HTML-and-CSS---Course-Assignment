@@ -4,10 +4,6 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-console.log(id);
-
-
-
 const url = "https://api.noroff.dev/api/v1/gamehub/" + id;
 
 async function fetchSingleProduct() {
