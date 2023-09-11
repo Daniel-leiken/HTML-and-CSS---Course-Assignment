@@ -53,7 +53,7 @@ async function getTrendingGames () {
             break;
         }
        
-       productContainerTrending.innerHTML += `<a href="productpage.html">
+       productContainerTrending.innerHTML += `<a href="productpage.html?id=${results[i].id}">
                     <div class="game-item">
                         <img src="${results[i].image}" alt="${results[i].title}"/>
                         <div class="game-description">
