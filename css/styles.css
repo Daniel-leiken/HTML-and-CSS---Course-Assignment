@@ -248,6 +248,18 @@ a {
     flex-direction: row;
     gap: 10px;
 }
+.game-row-recommended {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+}
+.game-row-trending {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+}
 .game-item {
     width: 150px;
     display: flex;
@@ -268,6 +280,11 @@ a {
     color: #1B203C;
     font-weight: 600;
     text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 
