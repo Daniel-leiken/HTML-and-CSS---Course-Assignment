@@ -22,10 +22,12 @@ async function fetchSingleProduct() {
         <img class="product-image" src="${results.image}" alt="${results.title}"/>
     </div>
     <div style="padding-top: 100px;" class="box-half">
-        <h2>${results.title}</h2>    
+        <h2>${results.title}</h2>
+            
             <p>${results.description}</p>
+            <h3>${results.price}$</h3>
         <div class="product-x">
-            <input style="width: 25px" type="number" id="quantity" name="quantity" min="1" value="5">
+            <input style="width: 25px" type="number" id="quantity" name="quantity" min="1" value="1">
             <a href="checkout.html?id=${results.id}" class="light-button">Add to cart</a>
         </div>    
     </div>            
